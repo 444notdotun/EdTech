@@ -1,9 +1,9 @@
 package com.EdTechTest;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootApplication
+@SpringBootTest(classes = {EdTechTest.class})
 public class EdTechTest {
    @Test
     void contextLoads() {
