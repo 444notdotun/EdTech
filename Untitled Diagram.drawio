@@ -1,0 +1,226 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="S_127sjTzBlftRVyQnFm">
+    <mxGraphModel dx="693" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IwfVpN395rG17OplEYTE-1" value="«abstract»&#xa;User" style="swimlane;fontStyle=1;align=center;startSize=40;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="850" y="40" width="260" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-2" value="- String id&#xa;- String firstName&#xa;- String lastName&#xa;- String email&#xa;- String password&#xa;- Role role&#xa;- AccountStatus accountStatus&#xa;- LocalDateTime createdAt" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-1" vertex="1">
+          <mxGeometry y="40" width="260" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-3" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-1" vertex="1">
+          <mxGeometry y="195" width="260" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-4" value="Admin" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="200" y="500" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-5" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-4" vertex="1">
+          <mxGeometry y="30" width="240" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-6" value="+ void approveFacilitator(String id)&#xa;+ void banUser(String id)&#xa;+ void approveCourse(String id)&#xa;+ void deleteCourse(String id)" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-4" vertex="1">
+          <mxGeometry y="40" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-7" value="Facilitator" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="660" y="410" width="260" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-8" value="- BigDecimal balance" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-7" vertex="1">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-9" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-7" vertex="1">
+          <mxGeometry y="60" width="260" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-10" value="+ BigDecimal getBalance()&#xa;+ void withdrawEarnings(BigDecimal amount)&#xa;+ Course createCourse(Course course)&#xa;+ void submitForVerification(String id)&#xa;+ delete course()&#xa;+ update course()&#xa;+ AddSectionToCourse()&#xa;+ AddLessonsToSection&#xa;+ createLesson()&#xa;+ UpdateLesson()&#xa;+ DeleteLesson()&#xa;+ CrudSection()&#xa;+ SubmitForApproval()" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-7" vertex="1">
+          <mxGeometry y="70" width="260" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-11" value="Student" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="500" width="260" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-12" value="- Set&lt;String&gt; wishlist" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-11" vertex="1">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-13" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-11" vertex="1">
+          <mxGeometry y="60" width="260" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-14" value="+ void addToWishlist(String courseId)&#xa;+ void removeFromWishlist(String courseId)&#xa;+ Set&lt;String&gt; getWishlist()&#xa;+ List&lt;Enrollment&gt; getEnrollments()" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-11" vertex="1">
+          <mxGeometry y="70" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-15" value="Course" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="30" y="780" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-16" value="- String id&#xa;- String title&#xa;- String description&#xa;- BigDecimal price&#xa;- List&lt;String&gt; facilitatorIds&#xa;- CourseStatus status&#xa;- LocalDateTime createdAt&#xa;-BookCourse()" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-15" vertex="1">
+          <mxGeometry y="30" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-17" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-15" vertex="1">
+          <mxGeometry y="160" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-18" value="+ viewAllSections()&#xa;+viewASection()&#xa;+ view facilitators" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-15" vertex="1">
+          <mxGeometry y="170" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-19" value="Section" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="460" y="920" width="280" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-20" value="- String id&#xa;- String courseId&#xa;- String title&#xa;- int orderIndex&#xa;- LinkedHashMap&lt;String, Lesson&gt; lessons" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-19" vertex="1">
+          <mxGeometry y="30" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-21" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-19" vertex="1">
+          <mxGeometry y="120" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-22" value="+ ViewLessons()" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-19" vertex="1">
+          <mxGeometry y="130" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-23" value="Lesson" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="860" y="764" width="280" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-24" value="- String id&#xa;- String sectionId&#xa;- String title&#xa;- String description&#xa;- String contentUrl&#xa;- int orderIndex&#xa;- LessonStatus status&#xa;- List&lt;Question&gt; questions" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-23" vertex="1">
+          <mxGeometry y="35" width="280" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-25" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-23" vertex="1">
+          <mxGeometry y="175" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-26" value="+  AskQuestion()&#xa;+  viewDescription()&#xa;+ MarkAsCompleted" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-23" vertex="1">
+          <mxGeometry y="184" width="280" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-27" value="Question" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="860" y="1160" width="280" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-28" value="- String id&#xa;- String lessonId&#xa;- String studentId&#xa;- String content&#xa;- LocalDateTime askedAt&#xa;- List&lt;Reply&gt; replies" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-27" vertex="1">
+          <mxGeometry y="30" width="280" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-29" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-27" vertex="1">
+          <mxGeometry y="145" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-30" value="+ viewQuestion&#xa;+ List&lt;Reply&gt; getReplies()&#xa;+ void addReply(Reply reply)" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-27" vertex="1">
+          <mxGeometry y="155" width="280" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-31" value="Reply" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="860" y="1505" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-32" value="- String id&#xa;- String questionId&#xa;- String authorId&#xa;- Role authorRole&#xa;- String content&#xa;- LocalDateTime repliedAt" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-31" vertex="1">
+          <mxGeometry y="30" width="280" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-33" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-31" vertex="1">
+          <mxGeometry y="145" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-34" value="+ ViewReply()" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-31" vertex="1">
+          <mxGeometry y="155" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-35" value="Payment" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1420" y="690" width="280" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-36" value="- String id&#xa;- String paystackReference&#xa;- String studentId&#xa;- String courseId&#xa;- BigDecimal amount&#xa;- PaymentStatus status&#xa;- LocalDateTime initiatedAt" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-35" vertex="1">
+          <mxGeometry y="30" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-37" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-35" vertex="1">
+          <mxGeometry y="160" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-38" value="+ pay()" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-35" vertex="1">
+          <mxGeometry y="170" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-39" value="Enrollment" style="swimlane;fontStyle=1;align=center;startSize=30;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="1160" width="280" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-40" value="- String id&#xa;- String studentId&#xa;- String courseId&#xa;- String paymentId&#xa;- EnrollmentStatus status&#xa;- LocalDateTime enrolledAt&#xa;- Set&lt;String&gt; completedLessonIds" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-39" vertex="1">
+          <mxGeometry y="30" width="280" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-41" value="" style="line;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-39" vertex="1">
+          <mxGeometry y="165" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-42" value="&#xa;+ void completeLesson(String lessonId)&#xa;+ Set&lt;String&gt; getCompletedLessonIds()&#xa;+ int getCompletionPercentage()" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-39" vertex="1">
+          <mxGeometry y="170" width="280" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-43" value="«enumeration»&#xa;Role" style="swimlane;fontStyle=1;align=center;startSize=40;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="40" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-44" value="ADMIN&#xa;FACILITATOR&#xa;STUDENT" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-43" vertex="1">
+          <mxGeometry y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-45" value="«enumeration»&#xa;AccountStatus" style="swimlane;fontStyle=1;align=center;startSize=40;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="170" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-46" value="PENDING_APPROVAL&#xa;ACTIVE&#xa;BANNED" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-45" vertex="1">
+          <mxGeometry y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-47" value="«enumeration»&#xa;CourseStatus" style="swimlane;fontStyle=1;align=center;startSize=40;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="300" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-48" value="DRAFT&#xa;PENDING_VERIFICATION&#xa;PUBLISHED&#xa;REJECTED" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-47" vertex="1">
+          <mxGeometry y="40" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-49" value="«enumeration»&#xa;LessonStatus" style="swimlane;fontStyle=1;align=center;startSize=40;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="440" width="180" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-50" value="DRAFT&#xa;PUBLISHED" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-49" vertex="1">
+          <mxGeometry y="40" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-51" value="«enumeration»&#xa;PaymentStatus" style="swimlane;fontStyle=1;align=center;startSize=40;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1920" y="555" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-52" value="PENDING&#xa;SUCCESS&#xa;FAILED" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-51" vertex="1">
+          <mxGeometry y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-53" value="«enumeration»&#xa;EnrollmentStatus" style="swimlane;fontStyle=1;align=center;startSize=40;labelBackgroundColor=none;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1780" y="685" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-54" value="ACTIVE&#xa;COMPLETED&#xa;CANCELLED" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=11;labelBackgroundColor=none;rounded=0;" parent="IwfVpN395rG17OplEYTE-53" vertex="1">
+          <mxGeometry y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-55" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-4" target="IwfVpN395rG17OplEYTE-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-56" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-7" target="IwfVpN395rG17OplEYTE-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-57" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-11" target="IwfVpN395rG17OplEYTE-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-58" value="1 contains many" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-15" target="IwfVpN395rG17OplEYTE-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-59" value="1 ordered LinkedHashMap many" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-19" target="IwfVpN395rG17OplEYTE-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-60" value="1 has list of many" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-23" target="IwfVpN395rG17OplEYTE-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-61" value="1 has list of many" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-27" target="IwfVpN395rG17OplEYTE-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-62" value="triggers creation of" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-35" target="IwfVpN395rG17OplEYTE-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-63" value="has" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-11" target="IwfVpN395rG17OplEYTE-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-64" value="initiates" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-11" target="IwfVpN395rG17OplEYTE-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-65" value="enrolled in" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=15;labelBackgroundColor=none;fontColor=default;rounded=0;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-15" target="IwfVpN395rG17OplEYTE-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-66" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-1" target="IwfVpN395rG17OplEYTE-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-67" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-1" target="IwfVpN395rG17OplEYTE-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-68" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-15" target="IwfVpN395rG17OplEYTE-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-69" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-23" target="IwfVpN395rG17OplEYTE-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-70" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-35" target="IwfVpN395rG17OplEYTE-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-71" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=none;fontColor=default;rounded=0;fontSize=15;strokeColor=default;swimlaneLine=1;strokeWidth=2;" parent="1" source="IwfVpN395rG17OplEYTE-39" target="IwfVpN395rG17OplEYTE-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IwfVpN395rG17OplEYTE-72" value="Text" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="130" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

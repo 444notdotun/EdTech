@@ -1,0 +1,318 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5" pages="2">
+  <diagram name="Page-1" id="XbsKLJhOSfSfgUxChYwJ">
+    <mxGraphModel dx="693" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-1" value="REGISTRATION" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="160" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-3" value="Submit registration" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="110" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-4" value="Validate input" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="174" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-5" value="400&#xa;Bad Request" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry y="174" width="70" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-6" value="Email already exists?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="238" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-7" value="409&#xa;Already exists" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="248" width="110" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-8" value="Role?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="318" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-9" value="Create student&#xa;status = ACTIVE" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry y="408" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-10" value="Return 201 Created" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry y="472" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-11" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="65" y="536" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="57" y="528" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-13" value="Create facilitator&#xa;status = PENDING" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="408" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-14" value="Notify admin&#xa;awaiting approval" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="472" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-15" value="Admin approves?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="536" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-16" value="Rejected&#xa;Notify user" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="546" width="110" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-17" value="Update status&#xa;PENDING → ACTIVE" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="616" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-18" value="Return 201 Created" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="680" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-19" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="285" y="744" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="277" y="736" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-21" value="LOGIN (all roles)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="20" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="665" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-23" value="Submit login&#xa;email + password" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="110" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-24" value="Find user by email" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="174" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-25" value="Credentials valid&#xa;+ status = ACTIVE?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="238" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-26" value="401&#xa;Rejected" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="248" width="70" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-27" value="Generate JWT&#xa;userId + role" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="328" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-28" value="Return 200 + JWT" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="392" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-29" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="665" y="456" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-30" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="657" y="448" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-31" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-2" target="ZuO10ga8DwOwnlBHKlMV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-32" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-3" target="ZuO10ga8DwOwnlBHKlMV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-33" value="No" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-4" target="ZuO10ga8DwOwnlBHKlMV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-34" value="Yes" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-4" target="ZuO10ga8DwOwnlBHKlMV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-35" value="Yes" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-6" target="ZuO10ga8DwOwnlBHKlMV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-36" value="No" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-6" target="ZuO10ga8DwOwnlBHKlMV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-37" value="Student" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-8" target="ZuO10ga8DwOwnlBHKlMV-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-38" value="Facilitator" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-8" target="ZuO10ga8DwOwnlBHKlMV-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-39" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-9" target="ZuO10ga8DwOwnlBHKlMV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-40" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-10" target="ZuO10ga8DwOwnlBHKlMV-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-41" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-13" target="ZuO10ga8DwOwnlBHKlMV-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-42" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-14" target="ZuO10ga8DwOwnlBHKlMV-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-43" value="No" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-15" target="ZuO10ga8DwOwnlBHKlMV-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-44" value="Yes" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-15" target="ZuO10ga8DwOwnlBHKlMV-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-45" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-17" target="ZuO10ga8DwOwnlBHKlMV-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-46" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-18" target="ZuO10ga8DwOwnlBHKlMV-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-47" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-22" target="ZuO10ga8DwOwnlBHKlMV-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-48" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-23" target="ZuO10ga8DwOwnlBHKlMV-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-49" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-24" target="ZuO10ga8DwOwnlBHKlMV-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-50" value="No" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-25" target="ZuO10ga8DwOwnlBHKlMV-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-51" value="Yes" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-25" target="ZuO10ga8DwOwnlBHKlMV-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-52" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-27" target="ZuO10ga8DwOwnlBHKlMV-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuO10ga8DwOwnlBHKlMV-53" edge="1" parent="1" source="ZuO10ga8DwOwnlBHKlMV-28" target="ZuO10ga8DwOwnlBHKlMV-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cHNp9eMlFWPyBAEgpVn6" name="Page-2">
+    <mxGraphModel dx="1410" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-1" value="Course Enrollment &amp; Payment" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="325" y="55" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-3" value="Student clicks Enroll" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="105" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-4" value="Student status = ACTIVE?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="169" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-5" value="403&#xa;Forbidden" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="179" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-6" value="Course status = PUBLISHED?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="249" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-7" value="404&#xa;Not Found" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="259" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-8" value="Already enrolled?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="329" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-9" value="409&#xa;Already enrolled" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="339" width="110" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-10" value="Initialize Paystack payment&#xa;create Payment (PENDING)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="409" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-11" value="Redirect student&#xa;to Paystack checkout" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="473" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-12" value="Student completes payment&#xa;on Paystack" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="537" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-13" value="Paystack sends webhook&#xa;to /payment/listen" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="601" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-14" value="Verify HMAC SHA512&#xa;signature" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="665" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-15" value="Signature valid?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="729" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-16" value="401&#xa;Reject request" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="739" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-17" value="event = charge.success&#xa;AND data.status = success?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="809" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-18" value="Update Payment&#xa;status = FAILED" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="829" width="120" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-19" value="Payment reference&#xa;already processed?" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="899" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-20" value="Ignore&#xa;duplicate event" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="909" width="110" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-21" value="Update Payment = CONFIRMED&#xa;Create Enrollment = ACTIVE" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="979" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-22" value="Send confirmation email&#xa;to student" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1043" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-23" value="Student gets access&#xa;to course content" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1107" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1171" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-25" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="317" y="1163" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-26" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-2" target="FVNNHeZGyIQCDXdKyLXM-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-27" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-3" target="FVNNHeZGyIQCDXdKyLXM-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-28" value="No" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-4" target="FVNNHeZGyIQCDXdKyLXM-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-29" value="Yes" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-4" target="FVNNHeZGyIQCDXdKyLXM-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-30" value="No" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-6" target="FVNNHeZGyIQCDXdKyLXM-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-31" value="Yes" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-6" target="FVNNHeZGyIQCDXdKyLXM-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-32" value="Yes" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-8" target="FVNNHeZGyIQCDXdKyLXM-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-33" value="No" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-8" target="FVNNHeZGyIQCDXdKyLXM-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-34" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-10" target="FVNNHeZGyIQCDXdKyLXM-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-35" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-11" target="FVNNHeZGyIQCDXdKyLXM-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-36" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-12" target="FVNNHeZGyIQCDXdKyLXM-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-37" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-13" target="FVNNHeZGyIQCDXdKyLXM-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-38" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-14" target="FVNNHeZGyIQCDXdKyLXM-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-39" value="No" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-15" target="FVNNHeZGyIQCDXdKyLXM-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-40" value="Yes" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-15" target="FVNNHeZGyIQCDXdKyLXM-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-41" value="No" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-17" target="FVNNHeZGyIQCDXdKyLXM-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-42" value="Yes" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-17" target="FVNNHeZGyIQCDXdKyLXM-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-43" value="Yes" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-19" target="FVNNHeZGyIQCDXdKyLXM-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-44" value="No" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-19" target="FVNNHeZGyIQCDXdKyLXM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-45" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-21" target="FVNNHeZGyIQCDXdKyLXM-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-46" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-22" target="FVNNHeZGyIQCDXdKyLXM-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FVNNHeZGyIQCDXdKyLXM-47" edge="1" parent="1" source="FVNNHeZGyIQCDXdKyLXM-23" target="FVNNHeZGyIQCDXdKyLXM-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
