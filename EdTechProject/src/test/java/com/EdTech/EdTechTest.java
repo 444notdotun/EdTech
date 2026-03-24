@@ -1,9 +1,9 @@
-package com.EdTechTest;
+package com.EdTech;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = {EdTechTest.class})
+@SpringBootTest
 public class EdTechTest {
    @Test
     void contextLoads() {
