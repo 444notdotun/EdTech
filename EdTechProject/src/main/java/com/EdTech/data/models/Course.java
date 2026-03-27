@@ -1,9 +1,8 @@
 package com.EdTech.data.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import com.EdTech.utils.IdGenerator;
+import com.EdTech.utils.Type;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -23,6 +22,12 @@ public class Course {
     private  CourseStatus status;
     private LocalDateTime createdOn;
     private LocalDateTime updatedOn;
+
+
+    @PrePersist
+    public void prePersist() {
+        this.setCourseId(IdGenerator.generateId(Type.COURSE));
+    }
 
     public Course (){
         this.facilitators = new ArrayList<>();
