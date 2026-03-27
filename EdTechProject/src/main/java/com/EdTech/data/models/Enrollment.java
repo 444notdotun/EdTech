@@ -1,9 +1,6 @@
 package com.EdTech.data.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -14,7 +11,7 @@ import java.util.Set;
 @Data
 public class Enrollment {
     @Id
-    private String id;
+    private String enrollmentId;
     @ManyToOne
     @JoinColumn(name = "studentId")
     private User user;
