@@ -1,5 +1,7 @@
 package com.EdTech.data.models;
 
+import com.EdTech.utils.IdGenerator;
+import com.EdTech.utils.Type;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -9,7 +11,7 @@ import java.time.LocalDateTime;
 @Data
 public class Question {
     @Id
-    private String id;
+    private String questionId;
     @ManyToOne
     @JoinColumn(name = "studentId")
     private Student student;
@@ -18,4 +20,10 @@ public class Question {
     private Lesson lesson;
     private String content;
     private LocalDateTime date;
+
+
+    @PrePersist
+    public void prePersist() {
+        this.setQuestionId(IdGenerator.generateId(Type.QUESTION));
+    }
 }
